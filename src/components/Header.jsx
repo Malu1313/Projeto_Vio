@@ -6,7 +6,7 @@ import IconButton from "@mui/material/IconButton";
 
 const Header = () => {
   return (
-    <AppBar sx={{ backgroundColor: "#FF087F" }}>
+    <AppBar sx={{ backgroundColor: "#FF2C97" }}>
       <Toolbar sx={{ display: "flex", justifyContent: "flex-end" }}>
         <IconButton
           color="inherit"
