@@ -67,14 +67,13 @@ function listEvento() {
   const listEvento = events.map((evento) => {
     return (
       <TableRow key={evento.id_evento}>
-        <TableCell align="center">{evento.n0me}</TableCell>
+        <TableCell align="center">{evento.nome}</TableCell>
         <TableCell align="center">{evento.descricao}</TableCell>
         <TableCell align="center">{evento.data_hora}</TableCell>
         <TableCell align="center">{evento.local}</TableCell>
-        <TableCell align="center">{evento.fk_id_organizador}</TableCell>
 
         <TableCell align="center">
-          <IconButton onClick={() => deleteEvento(evento.id)}>
+          <IconButton onClick={() => deleteEvento(evento.id_evento)}>
             <DeleteIcon color="error" />
           </IconButton>
         </TableCell>
