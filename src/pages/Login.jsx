@@ -31,8 +31,9 @@ function Login() {
     await api.postLogin(user).then(
       (response)=>{
         alert(response.data.message)
-        localStorage.setItem('authenticated', true)
-        navigate("users/")
+        localStorage.setItem('authenticated', true);
+        localStorage.setItem("token", response.data.token);
+        navigate("users/");
       },
     (error)=>{
       console.log(error)
